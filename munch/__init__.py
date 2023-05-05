@@ -673,6 +673,7 @@ try:
 
     Munch.toYAML = toYAML
     Munch.fromYAML = classmethod(fromYAML)
-
+    Munch.__repr__ = toYAML
+    
 except ImportError:
     pass
